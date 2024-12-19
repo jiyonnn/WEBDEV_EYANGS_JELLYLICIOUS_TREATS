@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="Order.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Order Form</h1>
+        <form action="#" method="post" class="order-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="food">Choose Your Food:</label>
+            <select id="food" name="food" required>
+                <option value="halo-halo">Halo-Halo - 80 Pesos</option>
+                <option value="leche-flan">Leche Flan - 100 Pesos</option>
+                <option value="bibingka">Bibingka - 80 Pesos</option>
+                <option value="buko-pandan">Buko Pandan - 50 Pesos</option>
+                <option value="coffee-jelly">Coffee Jelly - 50 Pesos</option>
+                <option value="mango-tapioca">Mango Tapioca - 70 Pesos</option>
+                <option value="pastil">Pastil - 20 Pesos</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit" class="submit-btn">Place Order</button>
+            <button onclick="location.href= 'initial.html'">Home</button>
+
+   
+        </form>
+    </div>
+</body>
+</html>
